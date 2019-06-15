@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>id选择器和类选择器</title>
+	<style>
+		
+	
+		#pagram1{
+			color: green;
+		}
+		.oo{
+			color: yellow;
+		}
+		.p1{
+			color: rgb(200,200,200);
+		}
+		.p2{
+			font-size: 50px;
+		}
+		.color1{
+			color: red;
+		}
+		.size1{
+			font-size: 50px;
+		}
+		.xhx{
+			text-decoration: underline;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- 指定的id名称找到相应的标签，然后设置属性 他是独一无二的由数字、字母和下划线组成，提取是#id名称，
+	数字不能开头,最好不用id选择器因为它是留给JS使用的-->
+	<p id="pagram1">我是一个段落</p>
+	<p class="oo">我是一个段落</p>
+	<p class="oo">我是一个段落</p>
+	<p class="p1 p2">我是一个段落</p>
+	<p class="color1 size1">我是一个段落</p>
+	<p class="xhx size1">我是一个段落</p>
+	<p class="color1 xhx">我是一个段落</p>
+	<hr>
+	<!--类选择器就是根据指定的类名称找到对应的属性，class="",提取的是.class的名称，类选择器可以重复，类选择器是
+	专们给CSS使用的。一个标签可以有多个类名class="p1 p2" 用空格隔开。
+		
+
+		
+	 -->
+
+</body>
+</html>

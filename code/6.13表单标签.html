@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单</title>
+</head>
+<body>
+<!-- 	1.表单是专们用来收集用户信息的
+	2.表单元素就是表单标签,只是有特殊的外观和功能
+	3.表单的格式:<form>
+					<表单元素>
+				</form>
+	4.常见的表单元素
+	  1.input标签,type属性 -->
+	  <!-- action里面的内容告诉表单需要提交到哪里 -->
+<form action="https://www.baidu.com/">
+	<!-- text表示明文输入框 -->
+	账号:<input type="text" name="a1"><br>
+	<!-- 暗文输入框 -->
+  	密码:<input type="password" name="b1"><br>
+  	<!-- 默认值 -->
+  	账号:<input type="text" value="YMY"><br>
+  	密码:	<input type="password" value="123"><br>
+
+
+  	<!-- 单选框radio 1.不互斥   2.想要互斥的话需要设置name属性并且值要一致 
+		3.需要进来就有默认值需要增加一个checked属性
+  	-->
+  	性别:
+  	<input type="radio" name="aa" checked="checked">男
+  	<input type="radio" name="aa" checked="">女
+  	<input type="radio" name="aa">保密<br>
+
+  	<!-- 多选框checkbox -->
+  	爱好:
+  	<input type="checkbox" checked="">跑步
+  	<input type="checkbox">游泳
+  	<input type="checkbox">篮球<br>
+
+  	<!-- 按钮标签buttom /image图片按钮
+		配合JS完成一些操作
+  	-->
+  	<input type="button" value="我是按钮" onclick="alert('yingmengyao')"><br>
+  	<input type="image" src="xd.jpg" onclick="alert('yingmengyao')"><br>
+	<input type="image" src="xd.jpg" onclick="alert('点我就可以看的到了')">
+<hr>
+	<!-- 重置按钮 reset 作用:清空表单中的数据
+				默认为重置也可以通过value来改变里面的内容-->
+	<input type="reset">	
+	<hr>
+	<!-- 提交按钮	submit 注意点:1.告诉表单需要提交到哪个服务器action里面输入  2.告诉表单哪些数据需要提交name属性 -->
+	<input type="submit"><br>
+	<!-- 隐藏hidden属性 -->
+	<input type="hidden" name="cc" value="666">
+
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后代选择器和子元素选择器
+	</title>
+	<style>
+		div p{
+			color: red;
+		}
+		div>p{
+			font-size: 40px;
+		}
+		.limian1>p{
+			text-align: center;
+		}
+	</style>
+
+
+</head>
+<body>
+	<!-- 后代选择器：1.写法：标签名称1 标签名称2{} 或者是能找到标签1的其他方法 标签名称2{}；    -->
+	<p>我是一个段落</p>
+	<div>
+		<p>我是一个段落</p>
+		<p>我是一个段落</p>
+		<div class="limian1">
+			<p>我是最里面的段落</p>
+		</div>
+	</div>
+	<p>我是一个段落</p>
+	<hr>
+	<!-- 子元素选择器：标签选择器1>标签选择器2{}；   -->
+	
+</html>

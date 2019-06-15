@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格标签</title>
+</head>
+<body>
+	<!-- 格式：
+	<table>这是一个表格
+		<tr>代表表格中的一行
+			<td>需要显示的内容展示区域</td>表示一行中的一列
+		</tr>
+	</table>
+	表格标签现在很少用基本都是div+css来代替了 
+	注意：表格标签是看不到的需要设置border属性
+	-->
+	<table border="1">
+		<tr>
+			<td>1.1</td>
+			<td>1.1</td>
+			<td>1.1</td>
+		</tr>
+		<tr>
+			<td>2.1</td>
+			<td>2.1</td>
+			<td>2.1</td>
+		</tr>
+	</table>
+	<hr>
+	<!-- 表格标签的属性：
+	1、宽度width和高度height：可以给table和td标签使用
+	2、水平对齐align和垂直对齐valign：水平可以给table、tr、td使用，垂直只能给tr和td使用
+	3、外边距(单元格与单元格之间的距离)cellspacing和内边距属性(单元格与文字的间隙)：-只能：table标签使用
+ -->
+ 	<table border="1" width="500px" align="center" cellspacing="10px" cellpadding="o">
+ 		<tr>
+ 			<td width="100px" height="100px">1.1</td>
+ 			<td align="center" valign="top">1.2</td>
+ 		</tr>
+ 		<tr align="center">
+ 			<td align="right">2.1</td>
+ 			<td >2.2</td>
+ 		</tr>
+ 	</table>
+<hr>
+	<!-- 细线表格 
+	1.给table设置bgcolor  2.给tr设置bgcolor  3.给table设置cellspacing为1px
+	-->
+	<table  width="500" height="300" align="center" bgcolor="black" cellspacing="1">
+		<tr align="center" bgcolor="white">
+			<td>1.1</td>
+			<td>1.1</td>
+			<td>1.1</td>
+		</tr>
+		<tr align="center" bgcolor="white">
+			<td>2.1</td>
+			<td>2.1</td>
+			<td>2.1</td>
+		</tr>
+	</table>
+
+	<hr>
+	<!-- 表格中的其他标签 
+		1、caption是专们作为表格的标题的，但是必须放在table标签里面
+		2、表格中第一列是标题的话可以用表格标题标签th标签
+	-->
+	<table  bgcolor="black" cellspacing="1" width="600" align="center">
+		<!-- caption为了h2里面的标题相对与表格居中的 -->
+		<caption>
+			<h2 align="center">今日小说排行榜</h2>
+		</caption>
+		<tr bgcolor="#a9a9a9" 	 >
+			<!-- 使用th标签 每一列为表格标题-->
+			<th>排名</th>
+			<th>关键词</th>
+			<th>趋势</th>
+			<th>今日搜索</th>
+			<th>最近七日</th>
+			<th>相关搜索</th>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+		<tr bgcolor="white" align="center">
+			<td>1</td>
+			<td align="left">暴走大事件</td>
+			<td><img src="xd.jpg" alt=""></td>
+			<td>623557</td>
+			<td>4088311</td>
+			<td>
+			<a href="#">贴吧</a>
+			<a href="#">图片</a>
+			<a href="#">百科</a>
+			</td>
+		</tr>
+
+	</table>
+	<!-- 表格的完整结构分类：
+	1、表格的标题 caption
+	2、表格的表头信息 thead
+	3、主体信息 tbody
+	4、页尾信息  tfoot   -->
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<!-- 单元格合并 
+	1、水平合并：colspan="x"
+	2、垂直合并: rowspan="x"
+
+
+	-->
+	<table cellspacing="1" width="500" height="600" bgcolor="black" align="center">
+				<tr bgcolor="white">
+					<td colspan="2"></td>
+					<td></td>
+					<td></td>
+						
+				</tr>
+				<tr bgcolor="white">
+					<td></td>
+					<td></td>
+					<!-- 垂直合并 -->
+					<td rowspan="2"></td>
+					<td></td>
+				</tr>
+				<tr bgcolor="white">
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr bgcolor="white">
+					<td></td>
+					<td></td>
+					<td colspan="2"></td>
+					
+				</tr>
+			</table>	
+			<hr>
+			<hr>	
+			<hr>	
+			<hr>	
+			<!-- 练习1 -->
+	<table bgcolor="black" cellspacing="1" align="center" width="600" height="600">
+			<tr bgcolor="white">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td colspan="3"></td>
+				<!-- <td></td>
+				<td></td> -->
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<hr>
+				<!-- 练习2 -->
+	<table bgcolor="black" cellspacing="1" align="center" width="600" height="600">
+			<tr bgcolor="white">
+				<td></td>
+				<td rowspan="4"></td>
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td ></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+		</table>	
+		<hr>
+				<!-- 练习3 -->
+	<table bgcolor="black" cellspacing="1" align="center" width="600" height="600">
+			<tr bgcolor="white">
+				<td colspan="2"></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td colspan="2" ></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<td rowspan="2"></td>
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<!-- <td></td> -->
+				<td></td>
+			</tr>
+		</table>
+		<hr>
+				<!-- 练习4 -->
+	<table bgcolor="black" cellspacing="1" align="center" width="600" height="600">
+			<tr bgcolor="white">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr bgcolor="white">
+				<td ></td>
+				<td colspan="2" rowspan="2"></td>
+				<!-- <td></td> -->
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<!-- <td colspan="2"></td> -->
+				<!-- <td></td> -->
+			</tr>
+			<tr bgcolor="white">
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+<hr>
+		<!-- xiaoxiaolianxi  -->
+	<table bgcolor="black" cellspacing="1" width="500" height="200" align="center">
+		<tr bgcolor="white">
+			<td rowspan="2" >HTML+CSS</td>
+			<td>老师带你hold住HTML5视频教程</td>
+			<td><a href="javascript:"><img src="xd.jpg" alt=""></a></td>
+		</tr>
+		<tr bgcolor="white">
+			<!-- <td></td> -->
+			<td>主讲:应梦瑶</td>
+			<td></td>
+		</tr>
+	</table>
+	<hr>
+	<table bgcolor="black" cellspacing="1" width="1500" height="200" align="center">
+		<caption><h2>新浪新闻图片	</h2></caption>
+		<tr bgcolor="white">
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+		</tr>
+		<tr bgcolor="white">
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+			<td align="center">
+				<img src="xd.jpg" alt="">
+				<a href="javascript:">四川凉山深处小学生走铁索</a>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

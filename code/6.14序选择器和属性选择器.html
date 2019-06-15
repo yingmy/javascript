@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>序选择器和属性选择器</title>
+	<style>
+	*{
+		list-style:none;
+	}
+		p:first-child{
+			color: red;
+		}
+		p:first-of-type{
+			color: blue;
+		}
+		p:last-child{
+			color: yellow;
+		}
+		p:nth-child(3){
+			font-size: 50px;
+		}
+		p:only-child{
+			font-size: 30px;
+		}
+		p:only-of-type{
+			text-align: center;
+		}
+		p[id]{
+			color: red;	
+		}
+		p[class=cc]{
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 序选择器十个：
+	1.同级别的第1个：格式：first-chil,不区分类型,最后一个是：last-child；:nth-child(n)第n个与下面是共用的；
+	如果是奇数选中就是（odd或者2n+1）；偶数选中就是（even或者2n+0）
+	2.同类型的第1：格式:first-of-type区分类型  :last-of-type
+	3.：only-child表明只有唯一一个子元素的标签
+	4.：only-of-type选种父元素中唯一类型的标签
+	-->
+	<h1>我是大标题</h1>
+	<p>我是一个段落</p>
+	<p>我是一个段落</p>
+	<div>
+		<p>我是一个段落</p>
+		<p>我是一个段落</p>
+		<p>我是一个段落</p>
+	</div>
+	<div>
+		<p>haha </p>
+	</div>
+<hr>
+	<!-- 属性选择器 ：根据指定的属性名称找到对应的标签，然后设置属性;格式：p[id]{}
+					最常见的应用场景，就是用于区分input属性
+
+	-->
+	<p id="pp1">我是新的段落</p>
+	<p id="pp2" class="cc">我是新的段落</p>
+	<p>我是新的段落</p>
+	<p id="pp3">我是新的段落</p>
+	<p class="cc">我是新的段落</p>
+
+	<ul>
+		<li>beijin</li>
+		<li>beijin</li>
+		<li>beijin</li>
+	</ul>
+
+
+</body>
+</html>

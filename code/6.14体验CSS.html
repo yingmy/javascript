@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style>
+	/*CSS主要学习两个模块，一个是css中的选择器，一个是css中的属性。*/
+		h2 {
+			text-align: center;
+			font-size: 30px;
+			color: red;
+			font-family: "微软雅黑"；
+		}
+		p{
+			color: green;
+
+			/*文字在浏览器中居中*/
+			text-align: center;
+
+			font-size: 20px;
+			/*字体类型，最好放在最后，不然其他的属性会展示不出来*/
+			font-family:"微软雅黑"；
+		}
+		h3{
+			text-align: center;
+			font-family: "times new roman" ,"黑体";
+			font-size: 50px;
+			color: red;
+		}
+		/*这是文字属性的简写，1.相互之间是空格隔开，2。在简写的格式中，style，weight，属性是可以省略可以互换位置，
+		3.size属性和family属性是不能省略的也是不能交换位置的，size一定在famliy之前，并且这两个属性是要在最后面的。	
+		*/
+
+		h4{
+			font:italic bold 50px "黑体";
+		}
+	</style>
+</head>
+<body>
+	<h2 >成功法则</h2>
+	<p >迟到毁一生</p>
+	<p >早退穷三代</p>
+	<p >按时上下班</p>
+	<p >必成高富帅</p>
+		<hr>
+	<!-- 第一：CSS的格式:
+	1.css代码写在style标签里面，style写在head标签里面，style标签里面type=text和css（可以不用写）。
+	2.标签名称+{}如 :   p{  属性名：属性相对应的值；  }
+	-->
+	<hr>
+	<!-- 第二：css属性
+	1.文字相关属性
+		1.文字样式的属性:font-style:normal，italic
+		2.文字粗细的属性:font-weight
+			单词取值：bold,bolder.lighter。
+			数字取值：100-900。
+		3.文字大小的属性:font-size：30px；
+		4.文字字体的属性:如果有英文需要把英文的属性写在前面然后逗号隔开在加上文字的属性，font-family:"宋体"；
+ 	-->
+ 	<hr>
+
+	<h3>aadc哈哈</h3>
+	<hr>
+	<!-- 文字属性简写 -->
+	<h4>abc我是以后个小标题</h4>
+	
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>marquee标签(跑马灯)</title>
+</head>
+<body>
+<!-- 1.不是w3c推荐的标签,但是非常好用
+	2.作用是显示跑马灯效果,默认从右往左
+	格式:<marquee behavior="滚动类型" direction="控制方向" scrollamount="滚共的速度" >
+		内容
+	</marquee> 
+	3.loop默认为-1无限循环
+	4.behavior="滚动类型"slide滚动到边界就停止,alternate滚到边界就弹回
+-->
+	<marquee  direction="left">来点内容</marquee>
+	<hr>
+	<marquee  scrollamount="10">来点内容</marquee>
+	<hr>
+	<marquee   scrollamount="100" behavior="slide">来点内容</marquee>
+	<hr>
+	<marquee   scrollamount="100" behavior="alternate">来点内容</marquee>
+
+	
+</body>
+</html>

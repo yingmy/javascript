@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS 背景颜色、图片、平铺、背景定位、背景属性缩写</title>
+	<style>
+		.box1{
+			height: 1000px;
+			
+			background-color:rgb(255,0,0);
+			/*可以房网上地址*/
+			background-image: url(http://img0.pconline.com.cn/pconline/1601/12/7440193_1_thumb.jpg);
+			/*平铺的方向*/
+			background-repeat:no-repeat;
+			/*背景图片的位置*/
+			background-position:100px bottom;
+		}
+		.box2{
+			height: 500px;
+			width: 300px;
+			background-image: url(xd.jpg);
+		}
+		.xt{
+			height: 600px;
+			width: 1000px;
+			background-image: url(xhs.jpg);
+			background-repeat: repeat;
+			
+		}
+		.yxlm1{
+			/*背景图片居中定位*/
+			height: 1000px;
+			background-repeat: no-repeat;
+			background-image: url(yxlm.jpg);
+			background-position: center; top
+		}
+		.box4{
+			/*background属性缩写实例，任何属性都可以省略，只写一个也行，没有顺序*/
+			height: 800px;
+			background:blue url(xd.jpg) no-repeat left;
+			background-attachment:fixed;
+
+		}
+		.dr2{
+			height: 1000px;
+			/*width: 930px;*/
+			background: url(image/bydrsm.jpg) no-repeat center top ;
+
+		}
+		.dr1{
+			height: 2000px;
+			/*width: 930px;*/
+			background:yellow  url(image/bydr1.jpg);
+
+			/*background-image: url(image/bydr.jpg);*/
+		}
+		.dr3{
+			height: 1000px;
+			/*width: 930px;*/
+			background: url(image/bydrxm.jpg) no-repeat center bottom;
+
+		}
+	</style>
+</head>
+<body>
+	<!-- 背景颜色：background-color属性 -->
+	<div class="box1"></div>
+	<hr>
+	<!-- 背景图片：background-image: url(图片地址);
+		如果图片大小没有标签大就会水平垂直平铺
+		图片地址可以是本地的也可以是网络地址
+	 -->
+	<div class="box2"></div>
+	<hr>
+	<!-- 图片平铺属性: 
+			background-repeat:1.repeat默认在水平垂直方向平铺;
+							  2.repeat-x在水平方向平铺
+							  3.repeat-y在垂直方向平铺
+							  4.no-repeat不平埔
+		}
+
+	-->
+	<div class="xt"></div>
+	<hr>
+	<!-- 同一个标签可以同时设置背景颜色和图片，并且背景图片会覆盖颜色。
+		控制背景图片的位置background-position: 0 0;水平方向，垂直方向
+		默认是right top
+		水平方向：left center right//也可以写具体的像素必须写单位。
+		垂直方向：top  center bottom//也可以写具体的像素
+		像素可以是正也可以是负数，也可以与单词混用。
+
+	-->
+	<div class="yxlm1"></div>
+	<hr>
+	<!-- 	背景属性缩写的格式：
+	background:背景颜色、背景图片、平铺方式、关联方式、定位方式。
+ 	-->
+ 	<div class="box4"></div>
+ <!-- 	什么是背景关联方式（了解就可以，用的少）：默认情况下背景图片会随着滚动条的滚动而滚动，如果不想随着滚动
+ 	可以修改背景图片和滚动条的关联：background-attachment: ;scroll默认，fixed不会跟着滚动 -->
+
+
+ <!-- 	背景图片和插入图片的区别：
+ 	1.背景图片不会占位置，插入会占位置
+ 	2.背景图片有定位属性，可以控制位置，插入图片没有定位属性。
+ 	3.插入图片的语义比背景图片的要强，如果想被搜索引擎搜索建议用插入图片。 -->
+ 	<hr>
+ 	
+ 	<div class="dr1">
+ 		<div class="dr2"></div>
+ 		<div class="dr3"></div>
+		
+			
+ 	</div>
+ 	
+
+
+</body>
+</html>

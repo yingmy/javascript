@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS元素显示模式</title>
+	<style>
+		div{
+			/*转换成行内*/
+			display: inline;
+		}
+	span{
+		/*转换成块级*/
+		display: block;
+	}
+	.p1{
+		/*转换成行内块级元素*/
+		display: inline-block;
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+	<!--1.在HTML中分为容器级和文本级标签
+		2.在CSS中分为块级元素和行内元素：块级元素占一行，行内元素不会占一行。
+			1.所有的容器级标签都是块级元素，所有的文本级都是行内元素但是除了p标签。
+			2.块级元素可以设置宽高，行内元素不能设置宽度和高度
+		3.行内块级元素:综合了块级和行内元素的特点，可以设置宽高也不会独占一行。如，image
+	-->
+	<!-- 显示模式的转化换：
+			
+	
+	-->
+	<div>我是div</div>
+	<div>我是div</div>
+	<span>我是span</span>
+	<span>我是span</span>
+	<p class="p1">我是段落</p>
+	<b class="p1">我是加粗</b>
+
+
+
+</body>
+</html>

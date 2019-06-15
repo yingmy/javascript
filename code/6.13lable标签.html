@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lable标签</title>
+	<!-- <style type="text/css">
+		textarea{
+			resize: none;
+		}
+	</style> -->
+</head>
+<body>
+	<!-- lable标签主要为了让输入框和文字绑定聚焦 -->
+	<form action="">
+		<!-- 第一种方式 -->
+		<label for="account">账号:</label> <input type="text" id="account">
+		<label for="account1">密码:</label> <input type="text" id="account1"><hr>
+		<!-- 第二种方式 -->
+		<label >账号: <input type="text"></label>
+		<label >密码: <input type="text"></label>
+
+		<!-- datalist标签 ,以后基本用不上
+		<datalist>
+			<option value="">待选内容</option>
+		</datalist> -->
+		<hr>
+		请输入: <input type="text" list="th">
+		<datalist id="th">
+			<option >汽车</option>
+			<option >美女</option>
+			<option >跑步</option>
+			<option >散步</option>
+			<option >游泳</option>
+		</datalist>
+		<hr>
+	<!-- 下拉列表select  : 1.不能输入内容,但是可以选择  2.默认值可以用selected属性来指定默认  3.可以通过optgroup来给下拉列表中的数据分类-->
+	<select name="" id="">
+		<option value="">北京</option>
+		<option value="" selected="">上海</option>
+		<option value="">广州</option>
+		<option value="">杭州</option>
+		<option value="">深圳</option>
+		<option value="">南昌</option>
+	</select>	<hr>
+	<!-- optgroup实例使用   注意有一个lable
+	<select>
+		<optgroup label="北京">
+			<option >朝阳区</option>
+			<option >昌平区</option>
+		</optgroup>
+	</select>
+	-->
+	<select name="" id="">
+		<optgroup label="北京">
+			<option value="">朝阳区</option>
+			<option value="">昌平区</option>
+		</optgroup>
+		<optgroup label="深圳">
+			<option value="">宝安</option>
+			<option value="">龙华</option>
+		</optgroup>
+	</select>		
+		<hr>
+	<!-- textarea标签:定义一个多行输入框 cols和rows可以改变输入框的行列但是还是可以无限输入-->
+	<textarea name="" id="" cols="4px" rows="30"></textarea>
+
+	</form>
+</body>
+</html>

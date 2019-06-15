@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内边距和外边距</title>
+	<style>
+		div{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #000;
+			/*内边距上面*/
+			padding-top: 30px;
+			/*内边距右边*/
+			padding-right: 20px;
+			/*内边距连写*/
+			padding: 40px 30px;
+			
+
+		}
+		span{
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			border: 1px solid #000;
+		}
+		.nox1{
+			margin: 20px 30px 40px 50px;
+		}
+		.nox2{
+			margin: 20px 30px 40px 50px;
+		}
+		/*外边距水平方向会叠加*/
+		.qq1{
+			margin-right: 30px;
+		}
+		/*垂直方向会合并，谁大听谁的*/
+		.pp1{
+			margin-bottom: 100px;
+		}
+		.pp2{
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+<body>
+	<!--内边距： 边款和内容之间的距离就是内边距
+	格式：(非连写)padding-top:
+				padding-right
+				padding-left
+				padding-bottom 
+			连写：padding：上右下左；
+		内边距也会被背景颜色填充
+		以后开发中对于嵌套关系的标签设置位置优先考虑padding
+			-->
+
+	<div>我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距</div>
+	<div>我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距我是内边距</div>
+	<!-- 外边距：标签与标签之间的距离就是外边距
+			非连写： margin-top:; 
+			        margin-bottom: ;
+					margin-left:;
+					margin-right:;
+			连写：margin:;
+		外边距是没有背景颜色的
+		以后开发中对于兄弟关系的标签设置位置优先考虑mardin
+		-->
+		<hr>
+		<!-- 外边距合并现象：水平方向会叠加，垂直方向上会合并，谁大听谁的 -->
+	<span class="nox1">我是span</span><span class="nox2">我是span</span><span class="nox3">我是span</span><span class="nox4">我是span</span>
+	<hr>
+	<span class="qq1">我是span</span><span class="qq2">我是span</span>
+	<div class="pp1">我是div</div>
+	<div class="pp2">我是div</div>
+</body>
+</html>
